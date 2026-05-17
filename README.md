@@ -104,9 +104,13 @@ lib/
 
 Aşağıdaki görüntüler Android emülatöründe (Pixel) alınmıştır:
 
-| Discover | Ürün Detayı | Sepet | Profil |
-|---|---|---|---|
-| ![Discover](screenshots/01_discover.png) | ![Product Detail](screenshots/02_product_detail.png) | ![Cart](screenshots/03_cart.png) | ![Profile](screenshots/04_profile.png) |
+| Discover | Ürün Detayı | Favoriler |
+|---|---|---|
+| ![Discover](screenshots/01_discover.png) | ![Product Detail](screenshots/02_product_detail.png) | ![Favorites](screenshots/03_favorites.png) |
+
+| Sepet | Profil |
+|---|---|
+| ![Cart](screenshots/04_cart.png) | ![Profile](screenshots/05_profile.png) |
 
 ## Veri Kaynağı
 

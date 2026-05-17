@@ -12,8 +12,8 @@ void main() {
     await tester.pumpWidget(const MiniCatalogApp());
     await tester.pumpAndSettle();
 
-    // Discover ekranı başlığı + bottom nav etiketi olduğu için iki "Discover" beklenir.
-    expect(find.text('Discover'), findsNWidgets(2));
+    // Discover ekranı başlığı tek widget olarak görünür (bottom nav etiketsiz, sadece ikon).
+    expect(find.text('Discover'), findsOneWidget);
     // Arama kutusu hint'i
     expect(find.text('Search products'), findsOneWidget);
     // Promosyon banner'ı
