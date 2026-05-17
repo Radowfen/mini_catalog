@@ -35,7 +35,7 @@ Yönergedeki "Ekstra paket kullanımı yapılmayacaktır" kuralına uygun olarak
    ```
 2. Projeyi klonlayın:
    ```bash
-   git clone https://github.com/<KULLANICI_ADIN>/mini_catalog.git
+   git clone https://github.com/Radowfen/mini_catalog.git
    cd mini_catalog
    ```
 3. Bağımlılıkları indirin:

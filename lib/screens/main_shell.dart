@@ -98,14 +98,12 @@ class _BottomNavBar extends StatelessWidget {
                   _NavItem(
                     icon: Icons.explore_outlined,
                     activeIcon: Icons.explore_rounded,
-                    label: 'Discover',
                     selected: currentIndex == 0,
                     onTap: () => onChanged(0),
                   ),
                   _NavItem(
                     icon: Icons.favorite_outline_rounded,
                     activeIcon: Icons.favorite_rounded,
-                    label: 'Favorites',
                     selected: currentIndex == 1,
                     badge: favorites.count,
                     onTap: () => onChanged(1),
@@ -113,7 +111,6 @@ class _BottomNavBar extends StatelessWidget {
                   _NavItem(
                     icon: Icons.shopping_bag_outlined,
                     activeIcon: Icons.shopping_bag_rounded,
-                    label: 'Cart',
                     selected: currentIndex == 2,
                     badge: cart.itemCount,
                     onTap: () => onChanged(2),
@@ -121,7 +118,6 @@ class _BottomNavBar extends StatelessWidget {
                   _NavItem(
                     icon: Icons.person_outline_rounded,
                     activeIcon: Icons.person_rounded,
-                    label: 'Profile',
                     selected: currentIndex == 3,
                     onTap: () => onChanged(3),
                   ),
@@ -138,7 +134,6 @@ class _BottomNavBar extends StatelessWidget {
 class _NavItem extends StatelessWidget {
   final IconData icon;
   final IconData activeIcon;
-  final String label;
   final bool selected;
   final int badge;
   final VoidCallback onTap;
@@ -146,7 +141,6 @@ class _NavItem extends StatelessWidget {
   const _NavItem({
     required this.icon,
     required this.activeIcon,
-    required this.label,
     required this.selected,
     required this.onTap,
     this.badge = 0,
@@ -209,22 +203,6 @@ class _NavItem extends StatelessWidget {
                     ),
                 ],
               ),
-              if (selected) ...[
-                const SizedBox(width: 6),
-                Flexible(
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      label,
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        color: c.onPrimary,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
             ],
           ),
         ),
